@@ -242,16 +242,17 @@ img {
 
   .sign-in {
     width: 50%;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .bem-vindo,
   .prosseguir {
-    font-size: 30px; 
-    letter-spacing: 2px;
-    left: 50%;
+    font-size: 32px; 
+    width: 50%;
+    letter-spacing: 1.5px;
+    left: 57%;
     transform: translateX(-50%);
   }
 
