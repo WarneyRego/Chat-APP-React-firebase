@@ -1,0 +1,231 @@
+body {
+  background: rgb(40, 37, 53);
+}
+
+
+header {
+  background-color: rgb(86, 79, 116);
+ 
+  
+  color: white;
+  position: fixed;
+  width: 100%;
+ left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+section {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(40, 37, 53);
+}
+
+main {
+  padding: 0px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+ top: 88%;
+  width: 60%;
+ left: 400px;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+form button {
+  color: white;
+  left: 20%;
+  width: 10%;
+  background-color: rgb(9, 124, 255);
+  border-radius:   0px 90px 90px  0;
+  cursor: pointer;
+}
+
+input {
+  line-height: 1.5;
+  width: 88%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding:  10px;
+  border-radius: 90px 0px 0px 90px;
+  transition: 500ms;
+}
+input:focus {
+  box-shadow: 0 0 10px 0 #565680 inset, 0 0 10px 4px #565680;
+  background: rgb(87, 87, 87);
+  
+}
+
+.button_send {
+  border-radius:   0px 90px 90px  0;
+  background-color: #2a5dc2; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 500ms;
+  margin-right: 10px;
+}
+.button_send:hover{  box-shadow: 0 0 10px 0 #4b70d6 inset, 0 0 10px 4px #2d70af;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+}
+
+.sign-in {
+  color: whitesmoke;
+  background-color:#33334d ;
+ padding: 20px;
+ border-radius: 8px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  top: 60%;
+  left: 47%;
+  position: absolute;
+  transition: 550ms;
+}
+.sign-in:hover {
+  color: whitesmoke;
+  background-color: #9898b8;
+ padding: 20px;
+ border-radius: 5px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  top: 60%;
+  left: 47%;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 #565680 inset, 0 0 10px 4px #565680;
+}
+
+.bem-vindo{
+  font-family: Arial;
+  font-size: 80px;
+  font-weight: bold;
+  color: whitesmoke;
+  top: 25%;
+  left: 20%;
+  position: absolute;
+}
+.prosseguir{
+  top: 35%;
+  position: absolute;
+  left: 20%;
+  font-family: arial;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 80px;
+}
+.sign-out{
+  position: absolute;
+  left: 89%;
+  margin-top: 3px;
+  
+  padding: 15px;
+  width: 10%;
+  color: white;
+  background-color: #676788;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 500ms;
+}
+.sign-out:hover{
+  padding: 15px;
+  width: 10%;
+  color: whitesmoke;
+  background-color: #9898b8;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 #565680 inset, 0 0 10px 4px #565680;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b79f6;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+.ImgLogo{
+  margin-top: 1px;
+  width: 60px;
+ height: 60px;
+}
