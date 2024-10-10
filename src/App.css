@@ -1,5 +1,6 @@
-body { 
+body {
   background: rgb(40, 37, 53);
+  overflow: hidden;
 }
 
 header {
@@ -27,7 +28,7 @@ main {
   padding: 0px;
   height: 80vh;
   margin: 10vh 0;
-  overflow-y: scroll;
+  overflow-y: scroll; 
   display: flex;
   flex-direction: column;
 }
@@ -92,7 +93,7 @@ form button:hover {
 
 .button_send {
   border-radius: 0px 90px 90px 0;
-  background-color: #2a5dc2; 
+  background-color: #2a5dc2;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -142,7 +143,7 @@ button:disabled {
 }
 
 .bem-vindo {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial;
   font-size: 80px;
   font-weight: bold;
   color: whitesmoke;
@@ -157,19 +158,16 @@ button:disabled {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Arial', sans-serif;
+  font-family: Arial;
   font-weight: bold;
   color: whitesmoke;
   font-size: 80px;
 }
 
 .sign-out {
-  position: absolute;
-  left: auto;
-  right: 5%;
-  margin-top: 3px;
   padding: 15px;
-  width: 10%;
+  width: auto;
+  min-width: 100px;
   color: white;
   background-color: #676788;
   outline: none;
@@ -179,13 +177,8 @@ button:disabled {
 }
 
 .sign-out:hover {
-  padding: 15px;
-  width: 10%;
   color: whitesmoke;
   background-color: #9898b8;
-  outline: none;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 0 10px 0 #565680 inset, 0 0 10px 4px #565680;
 }
@@ -205,7 +198,6 @@ p {
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Arial', sans-serif;
 }
 
 .message {
@@ -249,15 +241,16 @@ img {
   }
 
   .sign-in {
-    width: 80%;
-    top: 60%;
+    width: 50%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .bem-vindo,
   .prosseguir {
-    font-size: 40px;
+    font-size: 30px; 
+    letter-spacing: 2px;
     left: 50%;
     transform: translateX(-50%);
   }
